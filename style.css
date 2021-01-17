@@ -1,0 +1,42 @@
+li.active {
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.content {
+  display: none;
+  opacity: 0;
+  border: 1px solid #ccc;
+  width: 200px;
+  height: 100px;
+}
+@keyframes display {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.content-section .active {
+  display: block;
+  opacity: 1;
+  animation: display 1s ease;
+}
+
+ul {
+  margin-bottom: 10px;
+  padding: 0;
+}
+li {
+  list-style: none;
+  display: inline-block;
+  width: 50px;
+  margin-right: -4px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
